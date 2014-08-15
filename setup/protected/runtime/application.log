@@ -1,0 +1,447 @@
+2014/08/10 05:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=gii/index
+---
+2014/08/10 05:25:06 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('menu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('menu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:26:31 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('menu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('menu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:26:58 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('menu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('menu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:27:58 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('xmenu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('xmenu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:30:02 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('xmenu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('xmenu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:30:29 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('xmenu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('xmenu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:30:45 [error] [php] Invalid argument supplied for foreach() (/var/www/yii-setup/framework/zii/widgets/CMenu.php:263)
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CBaseController.php(172): SiteController->createWidget()
+#1 /var/www/yii-setup/setup/protected/views/layouts/main.php(32): SiteController->widget()
+#2 /var/www/yii-setup/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii-setup/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#5 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#6 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 /var/www/yii-setup/framework/web/CBaseController.php(206): CContentDecorator->run()
+#8 /var/www/yii-setup/framework/web/CBaseController.php(300): SiteController->endWidget()
+#9 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): SiteController->endContent()
+#10 /var/www/yii-setup/framework/web/CBaseController.php(126): require()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /var/www/yii-setup/framework/web/CController.php(784): SiteController->renderFile()
+#13 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): SiteController->render()
+#14 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /var/www/yii-setup/framework/web/CController.php(286): SiteController->runAction()
+#17 /var/www/yii-setup/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#18 /var/www/yii-setup/framework/web/CWebApplication.php(282): SiteController->run()
+#19 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/yii-setup/setup/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+in /var/www/yii-setup/setup/protected/views/layouts/main.php (32)
+in /var/www/yii-setup/setup/protected/views/layouts/column1.php (6)
+in /var/www/yii-setup/setup/protected/controllers/SiteController.php (32)
+2014/08/10 05:30:56 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('xmenu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('xmenu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:30:57 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('xmenu')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('xmenu')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:31:33 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('ddd')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('ddd')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:32:31 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.ddd" is not defined.' in /var/www/yii-setup/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CModule.php(105): CComponent->__get('ddd')
+#1 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('ddd')
+#2 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#3 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#4 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#5 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#11 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#12 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#13 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:32:38 [error] [exception.CException] exception 'CException' with message 'Yii application can only be created once.' in /var/www/yii-setup/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii-setup/framework/base/CApplication.php(129): YiiBase::setApplication(Object(XMenu))
+#1 /var/www/yii-setup/framework/YiiBase.php(217): CApplication->__construct()
+#2 /var/www/yii-setup/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /var/www/yii-setup/framework/base/CModule.php(103): CModule->getComponent('region')
+#4 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): CModule->__get('region')
+#5 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#6 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#7 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#8 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/yii-setup/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/yii-setup/framework/web/CBaseController.php(126): require('/var/www/yii-se...')
+#14 /var/www/yii-setup/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii-se...', Array, true)
+#15 /var/www/yii-setup/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii-se...', Array, true)
+#16 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/yii-setup/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/yii-setup/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii-setup/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#23 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/contact
+---
+2014/08/10 05:34:29 [error] [php] include(YourModel.php): failed to open stream: No such file or directory (/var/www/yii-setup/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/yii-setup/setup/protected/components/XMenu.php(20): spl_autoload_call()
+#1 /var/www/yii-setup/setup/protected/views/layouts/main.php(31): getMenuTree()
+#2 /var/www/yii-setup/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii-setup/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#5 /var/www/yii-setup/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#6 /var/www/yii-setup/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 /var/www/yii-setup/framework/web/CBaseController.php(206): CContentDecorator->run()
+#8 /var/www/yii-setup/framework/web/CBaseController.php(300): SiteController->endWidget()
+#9 /var/www/yii-setup/setup/protected/views/layouts/column1.php(6): SiteController->endContent()
+#10 /var/www/yii-setup/framework/web/CBaseController.php(126): require()
+#11 /var/www/yii-setup/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#12 /var/www/yii-setup/framework/web/CController.php(784): SiteController->renderFile()
+#13 /var/www/yii-setup/setup/protected/controllers/SiteController.php(32): SiteController->render()
+#14 /var/www/yii-setup/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/yii-setup/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /var/www/yii-setup/framework/web/CController.php(286): SiteController->runAction()
+#17 /var/www/yii-setup/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#18 /var/www/yii-setup/framework/web/CWebApplication.php(282): SiteController->run()
+#19 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/yii-setup/setup/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-setup/setup/index.php?r=site/index
+in /var/www/yii-setup/setup/protected/components/XMenu.php (20)
+in /var/www/yii-setup/setup/protected/views/layouts/main.php (31)
+in /var/www/yii-setup/setup/protected/views/layouts/column1.php (6)
+2014/08/10 05:35:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yourcontroller/youraction".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('yourcontroller/...')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=yourcontroller/youraction&id=1
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=site/index
+---
+2014/08/10 05:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yourcontroller/youraction".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('yourcontroller/...')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=yourcontroller/youraction&id=2
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=yourcontroller/youraction&id=1
+---
+2014/08/10 05:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yourcontroller/youraction".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('yourcontroller/...')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=yourcontroller/youraction&id=1
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=yourcontroller/youraction&id=2
+---
+2014/08/10 05:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yourcontroller/youraction".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('yourcontroller/...')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=yourcontroller/youraction&id=1
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=yourcontroller/youraction&id=2
+---
+2014/08/10 05:36:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yourcontroller/youraction".' in /var/www/yii-setup/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii-setup/framework/web/CWebApplication.php(141): CWebApplication->runController('yourcontroller/...')
+#1 /var/www/yii-setup/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-setup/setup/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii-setup/setup/index.php?r=yourcontroller/youraction&id=1
+HTTP_REFERER=http://localhost/yii-setup/setup/index.php?r=yourcontroller/youraction&id=2
+---
