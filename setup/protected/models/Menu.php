@@ -7,6 +7,8 @@
  * @property integer $id
  * @property integer $parent_id
  * @property string $title
+ * @property string $controller
+ * @property string $action
  *
  * The followings are the available model relations:
  * @property Menu $parent
@@ -30,12 +32,14 @@ class Menu extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
+			array('title, controller, action', 'required'),
 			array('parent_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>50),
+			array('controller', 'length', 'max'=>30),
+			array('action', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, parent_id, title', 'safe', 'on'=>'search'),
+			array('id, parent_id, title, controller, action', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +51,8 @@ class Menu extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                        'Childs' => array(self::HAS_MANY, 'Menu', 'parent_id'),
+			'parent' => array(self::BELONGS_TO, 'Menu', 'parent_id'),
+			'menus' => array(self::HAS_MANY, 'Menu', 'parent_id'),
 		);
 	}
 
@@ -60,6 +65,8 @@ class Menu extends CActiveRecord
 			'id' => 'ID',
 			'parent_id' => 'Parent',
 			'title' => 'Title',
+			'controller' => 'Controller',
+			'action' => 'Action',
 		);
 	}
 
@@ -84,6 +91,8 @@ class Menu extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('parent_id',$this->parent_id);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('controller',$this->controller,true);
+		$criteria->compare('action',$this->action,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -17,5 +17,13 @@
 	<?php echo CHtml::encode($data->title); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('controller')); ?>:</b>
+	<?php echo CHtml::encode($data->controller); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('action')); ?>:</b>
+	<?php echo CHtml::encode($data->action); ?>
+	<br />
+
 
 </div>

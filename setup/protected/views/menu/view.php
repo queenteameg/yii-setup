@@ -24,5 +24,7 @@ $this->menu=array(
 		'id',
 		'parent_id',
 		'title',
+		'controller',
+		'action',
 	),
 )); ?>

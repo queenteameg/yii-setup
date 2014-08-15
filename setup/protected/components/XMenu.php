@@ -33,9 +33,9 @@ class XMenu extends CApplicationComponent {
         if (isset($modelRow->Childs)) {
             $chump = self::getMenuItems($modelRow->Childs);
             if ($chump != null)
-                $res = array('label' => $modelRow->title, 'items' => $chump, 'url' => Yii::app()->createUrl('yourcontroller/youraction', array('id' => $modelRow->id)));
+                $res = array('label' => $modelRow->title, 'items' => $chump, 'url' => Yii::app()->createUrl($modelRow->controller . '/' . $modelRow->action, array('id' => $modelRow->id)));
             else
-                $res = array('label' => $modelRow->title, 'url' => Yii::app()->createUrl('yourcontroller/youraction', array('id' => $modelRow->id)));
+                $res = array('label' => $modelRow->title, 'url' => Yii::app()->createUrl($modelRow->controller . '/' . $modelRow->action, array('id' => $modelRow->id)));
             return $res;
         } else {
             if (is_array($modelRow)) {
@@ -45,7 +45,7 @@ class XMenu extends CApplicationComponent {
                 }
                 return $arr;
             } else {
-                return array('label' => ($modelRow->title), 'url' => Yii::app()->createUrl('yourcontroller/youraction', array('id' => $modelRow->id)));
+                return array('label' => ($modelRow->title), 'url' => Yii::app()->createUrl($modelRow->controller . '/' . $modelRow->action, array('id' => $modelRow->id)));
             }
         }
     }

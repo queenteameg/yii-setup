@@ -31,6 +31,18 @@
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'controller'); ?>
+		<?php echo $form->textField($model,'controller',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'controller'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'action'); ?>
+		<?php echo $form->textField($model,'action',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'action'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
